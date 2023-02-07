@@ -5,7 +5,7 @@
   <title>Câu 04</title>
 </head>
 <body>
-<canvas id="canvas" height="600" width="600" style="border: 1px solid #0000FF">
+<canvas id="canvas" height="600" width="600" style="border: 1px solid #26ad2d">
 
 </canvas>
 <script>
@@ -17,14 +17,14 @@
       this.width = width;
       this.height = height;
     }
-    render(radius){
+    render(){
       let context = document.getElementById("canvas").getContext("2d");
       context.fillStyle = this.color;
       context.fillRect(this.x, this.y, this.width, this.height);
       context.fill()
     }
   }
-  let rectangle1 = new Rectangle(10,10,30,30,"pink")
+  let rectangle1 = new Rectangle(10,10,300,300,"blue")
   rectangle1.render()
 
 
