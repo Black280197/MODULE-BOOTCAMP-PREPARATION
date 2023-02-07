@@ -1,5 +1,5 @@
 let arr = [2, 4, 6, 7, 4, 8];
-function findAvg() {
+function findAvg(arr) {
     let avg = 0;
     for (let i =0; i < arr.length; i++) {
         avg += arr[i];
@@ -8,4 +8,4 @@ function findAvg() {
     document.getElementById("avg").innerHTML = "Điểm trung bình: " + avg;
 }
 
-findAvg();
+findAvg(arr);
